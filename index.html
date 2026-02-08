@@ -1,211 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WhisperPack — Offline transcription for Windows</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WhisperPack — offline transcription of audio and video</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Sans:wght@500;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="site-header">
-      <div class="nav">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
         <div class="logo">WhisperPack</div>
-        <nav class="nav-links">
-          <a href="#what">What it is</a>
+        <nav class="nav">
+          <a href="#about">What it is</a>
           <a href="#benefits">Benefits</a>
           <a href="#audience">Who it’s for</a>
-          <a href="#how">How to use</a>
+          <a href="#steps">How to use</a>
           <a href="#faq">FAQ</a>
+          <a class="nav-highlight" href="https://t.me/Agapovkirill" target="_blank" rel="noreferrer">
+            Message on Telegram
+          </a>
         </nav>
-        <a class="nav-cta" href="https://t.me/">Message on Telegram</a>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-left">
-          <p class="eyebrow">WhisperPack</p>
-          <h1>WhisperPack — free offline transcription of audio and video to text (Windows 10/11).</h1>
-          <p class="hero-subtitle">
-            Drop a recording → click Start → get the text. No cloud upload: everything is recognized
-            locally on your laptop.
-          </p>
-          <p class="hero-note">macOS version — later.</p>
-          <div class="hero-actions">
-            <a class="primary" href="#download">Download for free</a>
-            <a class="secondary" href="#how">How to use</a>
+      <section class="hero section reveal is-visible">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>
+              WhisperPack — free offline transcription of audio and video to text
+              <span class="hero-platform">(Windows 10/11)</span>
+            </h1>
+            <p class="lead">
+              Drop a recording → click Start → get the text. No cloud upload: everything is
+              recognized locally on your laptop.
+            </p>
+            <p class="micro">macOS version — later.</p>
+            <div class="hero-actions">
+              <a
+                class="button primary"
+                href="https://disk.yandex.ru/d/iYc-6KK3FwhYLw"
+                target="_blank"
+                rel="noreferrer"
+              >
+                download for free
+              </a>
+              <a class="button ghost" href="#steps">How to use</a>
+            </div>
+            <p class="meta">Just unpack • No registration • Offline</p>
           </div>
-          <div class="hero-steps">
-            <span>Just unpack</span>
-            <span>•</span>
-            <span>No registration</span>
-            <span>•</span>
-            <span>Offline</span>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="flow">
-            <div class="flow-card">audio</div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-card">text</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="what" class="section">
-        <div class="section-header">
-          <h2>What it is</h2>
-        </div>
-        <div class="section-body">
-          <p>
-            WhisperPack is a free, portable toolkit and automation for offline transcription on
-            Windows. I bundled open-source speech recognition (Whisper/whisper.cpp) and audio/video
-            conversion (FFmpeg) into a one-click workflow — no manual setup.
-          </p>
-          <p>
-            WhisperPack is not an official OpenAI product. It’s my build based on open-source
-            components.
-          </p>
-          <div class="icon-row">
-            <div>🎙️ Recording →</div>
-            <div>📁 File →</div>
-            <div>📝 Ready text</div>
+          <div class="hero-visual">
+            <div class="visual-card">
+              <div class="visual-line"></div>
+              <div class="visual-line short"></div>
+              <div class="visual-flow">
+                <span>audio</span>
+                <span class="arrow">→</span>
+                <span>text</span>
+              </div>
+              <div class="visual-wave"></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="benefits" class="section">
-        <div class="section-header">
+      <section class="section reveal" id="about">
+        <div class="container split">
+          <div>
+            <h2>What it is</h2>
+            <p>
+              WhisperPack is a free portable toolkit and automation for offline transcription on
+              Windows. I bundled open-source speech recognition (Whisper/whisper.cpp) and audio/video
+              conversion (FFmpeg) into a one-click workflow — no manual setup.
+            </p>
+            <div class="callout">
+              WhisperPack is not an official OpenAI product. It’s my build based on open-source
+              components.
+            </div>
+          </div>
+          <div class="icon-card">
+            <div class="icon-row">
+              <span class="icon">🎙️</span>
+              <span class="icon">📁</span>
+              <span class="icon">📝</span>
+            </div>
+            <p class="caption">Recording → file → ready text</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="benefits">
+        <div class="container">
           <h2>Benefits</h2>
-        </div>
-        <div class="section-body">
-          <ul class="benefits">
-            <li>Free</li>
-            <li>Confidential: files stay on your computer</li>
-            <li>No “cloud limits”: you don’t need to upload recordings to services</li>
-            <li>Understands formats: mp4/webm/mkv/mp3/m4a/wav and more</li>
-            <li>Simple: unpack → drop → run</li>
-            <li>Subfolders by client/date</li>
-            <li>Quality choice: speed/accuracy</li>
-          </ul>
-          <blockquote>
-            “I’m a marketing director and I talk a lot: Zoom / Google Meet / Telemost, interviews,
-            briefs, voice notes. I need the full clean text, not just a summary — so I can pull out
-            agreements, tasks, and insights and keep working with the text.”
-          </blockquote>
-        </div>
-      </section>
-
-      <section id="audience" class="section">
-        <div class="section-header">
-          <h2>Who it’s for</h2>
-        </div>
-        <div class="section-body">
-          <div class="audience">
-            <span>Leaders</span>
-            <span>Managers</span>
-            <span>Sales / Account</span>
-            <span>HR / Recruiters</span>
-            <span>Producers / Marketers</span>
-            <span>Consultants</span>
-            <span>Analysts</span>
+          <div class="grid benefits">
+            <div class="card reveal">Free</div>
+            <div class="card reveal">Confidential: files stay on your computer</div>
+            <div class="card reveal">
+              No “cloud limits”: you don’t need to upload recordings to services
+            </div>
+            <div class="card reveal">
+              Understands formats: mp4/webm/mkv/mp3<br />/m4a/wav and more
+            </div>
+            <div class="card reveal">Simple: unpack → drop → run</div>
+            <div class="card reveal">Subfolders by client/date</div>
+            <div class="card reveal">Quality choice: speed/accuracy</div>
           </div>
         </div>
       </section>
 
-      <section id="how" class="section">
-        <div class="section-header">
+      <section class="section reveal" id="audience">
+        <div class="container split">
+          <div class="quote-block">
+            <p>
+              “I’m a marketing director and I talk a lot: Zoom / Google Meet / Telemost, interviews,
+              briefs, voice notes. I need the full clean text, not just a summary — so I can pull out
+              agreements, tasks, and insights and keep working with the text.”
+            </p>
+          </div>
+          <div>
+            <h2>Who it’s for</h2>
+            <ul class="list">
+              <li>Leaders</li>
+              <li>Managers</li>
+              <li>Sales / account</li>
+              <li>HR / recruiters</li>
+              <li>Producers / marketers</li>
+              <li>Consultants</li>
+              <li>Analysts</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="steps">
+        <div class="container">
           <h2>How to use</h2>
-        </div>
-        <div class="section-body how">
-          <div class="step">
-            <div class="step-number">01</div>
-            <div>
-              <h3>Download and unpack</h3>
-              <p>Inside there’s INSTRUCTION.txt with details.</p>
+          <div class="grid steps">
+            <div class="card reveal">
+              <span class="step">01</span>
+              <p>Download and unpack</p>
+              <p class="caption steps-caption">Inside there’s INSTRUCTION.txt with details.</p>
             </div>
-          </div>
-          <div class="step">
-            <div class="step-number">02</div>
-            <div>
-              <h3>Put recordings in Rec\new (subfolders are ok)</h3>
+            <div class="card reveal">
+              <span class="step">02</span>
+              <p>Put recordings in Rec\new (subfolders are ok)</p>
             </div>
-          </div>
-          <div class="step">
-            <div class="step-number">03</div>
-            <div>
-              <h3>Run START.bat, choose quality — done</h3>
-            </div>
-          </div>
-          <div class="results">
-            <div class="result-card">
-              <strong>TXT</strong>
-              <span>Full text</span>
-            </div>
-            <div class="result-card">
-              <strong>SRT</strong>
-              <span>Text with timecodes</span>
+            <div class="card reveal">
+              <span class="step">03</span>
+              <p>Run START.bat, choose quality — done</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="download" class="section download">
-        <div class="section-header">
+      <section class="section reveal" id="results">
+        <div class="container">
+          <h2>Results</h2>
+          <div class="grid results">
+            <div class="card reveal">
+              <h3>TXT</h3>
+              <p>Full text</p>
+            </div>
+            <div class="card reveal">
+              <h3>SRT</h3>
+              <p>Text with timecodes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta reveal" id="download">
+        <div class="container">
           <h2>Download WhisperPack</h2>
-        </div>
-        <div class="section-body">
-          <a class="primary" href="#">Download (Yandex Disk)</a>
-          <p class="download-note">Free • Portable • Offline • Instruction inside</p>
+          <a
+            class="button primary"
+            href="https://disk.yandex.ru/d/iYc-6KK3FwhYLw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download (Yandex Disk)
+          </a>
+          <p class="meta">Free • Portable • Offline • Instruction inside</p>
+          <div class="cta-links">
+            <a href="#steps">How to use</a>
+            <a href="#faq">FAQ</a>
+          </div>
         </div>
       </section>
 
-      <section id="faq" class="section">
-        <div class="section-header">
+      <section class="section reveal" id="faq">
+        <div class="container">
           <h2>FAQ</h2>
-        </div>
-        <div class="section-body faq">
-          <div>
-            <h3>Do I need internet?</h3>
-            <p>No. Recognition works locally, without uploading to the cloud.</p>
-          </div>
-          <div>
-            <h3>Which formats are supported?</h3>
-            <p>mp4/webm/mkv/mp3/m4a/wav and other popular formats.</p>
-          </div>
-          <div>
-            <h3>Can I choose the quality?</h3>
-            <p>Yes. There is a speed/accuracy choice at launch.</p>
+          <div class="grid faq">
+            <div class="card reveal">
+              <h3>Do I need internet?</h3>
+              <p>No. Recognition works locally, without uploading to the cloud.</p>
+            </div>
+            <div class="card reveal">
+              <h3>Which formats are supported?</h3>
+              <p>mp4/webm/mkv/mp3/m4a/wav and other popular formats.</p>
+            </div>
+            <div class="card reveal">
+              <h3>Can I choose the quality?</h3>
+              <p>Yes. There is a speed/accuracy choice at launch.</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-left">
-        <div class="logo">WhisperPack</div>
-        <p>WhisperPack is not an official OpenAI product. It’s my build based on open-source components.</p>
-      </div>
-      <div class="footer-column">
-        <h4>Contacts</h4>
-        <a href="https://t.me/">Telegram channel</a>
-        <a href="https://t.me/">Message on Telegram</a>
-        <a href="#">Book a meeting</a>
-        <span>Email: agapov.kirill@gmail.com</span>
-      </div>
-      <div class="footer-column">
-        <h4>Navigation</h4>
-        <a href="#what">What it is</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#how">How to use</a>
-        <a href="#download">Download</a>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">WhisperPack</div>
+          <p class="caption">
+            WhisperPack is not an official OpenAI product. It’s my build based on open-source
+            components.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Contacts</h3>
+          <a href="https://t.me/agapovmarketing" target="_blank" rel="noreferrer">Telegram channel</a>
+          <a href="https://t.me/Agapovkirill" target="_blank" rel="noreferrer">Message on Telegram</a>
+          <a href="https://planerka.app/kirill-agapov" target="_blank" rel="noreferrer">
+            Book a meeting
+          </a>
+          <a href="mailto:agapov.kirill@gmail.com">Email: agapov.kirill@gmail.com</a>
+        </div>
+        <div class="footer-links">
+          <h3>Navigation</h3>
+          <a href="#about">What it is</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#steps">How to use</a>
+          <a href="#download">Download</a>
+        </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
